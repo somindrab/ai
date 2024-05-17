@@ -1,0 +1,7 @@
+# a neural net with 1 hidden layer.
+# the n_hidden here is for the number of neurons in that hidden layer
+class NeuralNet:
+    def __init__(self,
+                 n_features,
+                 n_hidden
+                

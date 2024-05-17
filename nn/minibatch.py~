@@ -1,0 +1,7 @@
+import numpy as np
+
+# this returns batches of features and class labels based on the size of the batch
+
+# this implements a co-routine sort of a function
+def minibatch_generator(X, y, minibatch_size):
+    

@@ -1,0 +1,110 @@
+from sklearn.model_selection import train_test_split
+from sklearn.datasets import fetch_openml
+from sklearn.preprocessing import StandardScaler
+
+import numpy as np
+
+import torch
+import torch.nn as nn
+from torch.utils.data import DataLoader
+from torch.utils.data import TensorDataset
+
+
+X, y = fetch_openml('mnist_784',
+                    version=1,
+                    return_X_y=True)
+
+# X and y happen to be DataFrames. So, values
+X = X.values
+y = y.astype(int).values
+
+
+X = (X - np.mean(X)) / np.std(X)
+
+## there are a total of 70,000 examples with 70000 labels.
+## we want to use 55000 for training, 5000 for validation, and 10000 for testing
+X_temp, X_test, y_temp, y_test = train_test_split(X,
+                                                  y,
+                                                  test_size=10000,
+                                                  random_state=123,
+                                                  stratify=y)
+
+X_train, X_valid, y_train, y_valid = train_test_split(X_temp,
+                                                      y_temp,
+                                                      test_size=5000,
+                                                      random_state=123,
+                                                      stratify=y_temp)
+
+#Convert the numpy arrays into tensors for pytorch
+X_train = torch.from_numpy(X_train).float()
+y_train = torch.from_numpy(y_train)
+
+X_test = torch.from_numpy(X_test).float()
+y_test = torch.from_numpy(y_test)
+
+X_valid = torch.from_numpy(X_valid).float()
+y_valid = torch.from_numpy(y_valid)
+
+train_ds = TensorDataset(X_train, y_train)
+
+train_dl = DataLoader(train_ds, batch_size=2, shuffle=True)
+
+class Model(nn.Module):
+    def __init__(self, n_features, hiddenSize, n_classes):
+        super().__init__()
+
+        # first hidden
+        self.layer1 = nn.Linear(n_features, hiddenSize)
+
+        # # second hidden
+        # self.layer2 = nn.Linear(hiddenSize, hiddenSize)
+
+        # # third hidden
+        # self.layer3 = nn.Linear(hiddenSize, hiddenSize)
+
+        # output
+        self.layer4 = nn.Linear(hiddenSize, n_classes)
+        
+    def forward(self, x):
+        x = self.layer1(x)
+        x = nn.Sigmoid()(x)
+        # x = self.layer2(x)
+        # x = nn.Sigmoid()(x)
+        # x = self.layer3(x)
+        # x = nn.Sigmoid()(x)
+        x = self.layer4(x)
+        x = nn.Sigmoid()(x)
+
+        return x
+
+model = Model(784,
+              10,
+              10)
+
+learning_rate = 0.005
+
+loss_fn = nn.CrossEntropyLoss()
+
+optimizer = torch.optim.Adam(model.parameters(), learning_rate)
+
+num_epochs = 100
+
+loss_hist = [0] * num_epochs
+acc_hist = [0] * num_epochs
+
+for epoch in range(num_epochs):
+    for x_batch, y_batch in train_dl:
+        pred = model(x_batch)
+        loss = loss_fn(pred, y_batch)
+        loss.backward()
+        optimizer.step()
+        optimizer.zero_grad()
+        loss_hist[epoch] += loss.item() * y_batch.size(0)
+        is_correct = (torch.argmax(pred, dim=1) == y_batch).float()
+        acc_hist[epoch] += is_correct.sum()
+
+        loss_hist[epoch] /= len(train_dl.dataset)
+    acc_hist[epoch] /= len(train_dl.dataset)
+
+    print(f'Epoch {epoch+1} | Loss: {loss_hist[epoch]} | Accuracy: {acc_hist[epoch]}')
+

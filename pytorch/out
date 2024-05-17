@@ -1,0 +1,153 @@
+/home/som/mambaforge/envs/pyml/lib/python3.9/site-packages/torch/nn/modules/module.py:1532: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+Epoch 1 | Loss: 1.0833257353305816 | Accuracy: 0.3199999928474426
+Epoch 2 | Loss: 0.965192357301712 | Accuracy: 0.6800000071525574
+Epoch 3 | Loss: 0.8468794798851014 | Accuracy: 0.6899999976158142
+Epoch 4 | Loss: 0.8003559720516205 | Accuracy: 0.7300000190734863
+Epoch 5 | Loss: 0.7674998676776886 | Accuracy: 0.8799999952316284
+Epoch 6 | Loss: 0.7326625907421112 | Accuracy: 0.9200000166893005
+Epoch 7 | Loss: 0.7002139890193939 | Accuracy: 0.9300000071525574
+Epoch 8 | Loss: 0.6772070610523224 | Accuracy: 0.949999988079071
+Epoch 9 | Loss: 0.6623279476165771 | Accuracy: 0.949999988079071
+Epoch 10 | Loss: 0.6525533056259155 | Accuracy: 0.9399999976158142
+Epoch 11 | Loss: 0.6427366554737091 | Accuracy: 0.9599999785423279
+Epoch 12 | Loss: 0.63752965092659 | Accuracy: 0.9399999976158142
+Epoch 13 | Loss: 0.6416223120689392 | Accuracy: 0.9399999976158142
+Epoch 14 | Loss: 0.6263112592697143 | Accuracy: 0.949999988079071
+Epoch 15 | Loss: 0.6219044172763825 | Accuracy: 0.9399999976158142
+Epoch 16 | Loss: 0.62303142786026 | Accuracy: 0.9300000071525574
+Epoch 17 | Loss: 0.618087739944458 | Accuracy: 0.9399999976158142
+Epoch 18 | Loss: 0.6159285891056061 | Accuracy: 0.949999988079071
+Epoch 19 | Loss: 0.6165647685527802 | Accuracy: 0.949999988079071
+Epoch 20 | Loss: 0.61597039103508 | Accuracy: 0.9599999785423279
+Epoch 21 | Loss: 0.6094367003440857 | Accuracy: 0.949999988079071
+Epoch 22 | Loss: 0.6105131614208221 | Accuracy: 0.9599999785423279
+Epoch 23 | Loss: 0.6043282389640808 | Accuracy: 0.9599999785423279
+Epoch 24 | Loss: 0.606010047197342 | Accuracy: 0.9599999785423279
+Epoch 25 | Loss: 0.6040146577358246 | Accuracy: 0.9599999785423279
+Epoch 26 | Loss: 0.6057038593292237 | Accuracy: 0.9599999785423279
+Epoch 27 | Loss: 0.6038107776641846 | Accuracy: 0.9599999785423279
+Epoch 28 | Loss: 0.6032697904109955 | Accuracy: 0.949999988079071
+Epoch 29 | Loss: 0.600823028087616 | Accuracy: 0.9599999785423279
+Epoch 30 | Loss: 0.6069549655914307 | Accuracy: 0.949999988079071
+Epoch 31 | Loss: 0.6014346241950989 | Accuracy: 0.9599999785423279
+Epoch 32 | Loss: 0.604010113477707 | Accuracy: 0.9599999785423279
+Epoch 33 | Loss: 0.6018336939811707 | Accuracy: 0.949999988079071
+Epoch 34 | Loss: 0.5998907840251922 | Accuracy: 0.9599999785423279
+Epoch 35 | Loss: 0.5962879228591919 | Accuracy: 0.9599999785423279
+Epoch 36 | Loss: 0.5993376576900482 | Accuracy: 0.9599999785423279
+Epoch 37 | Loss: 0.5953722286224366 | Accuracy: 0.9700000286102295
+Epoch 38 | Loss: 0.5943959617614746 | Accuracy: 0.9599999785423279
+Epoch 39 | Loss: 0.5956265461444855 | Accuracy: 0.9700000286102295
+Epoch 40 | Loss: 0.5986112678050994 | Accuracy: 0.9599999785423279
+Epoch 41 | Loss: 0.6080303430557251 | Accuracy: 0.949999988079071
+Epoch 42 | Loss: 0.597679957151413 | Accuracy: 0.9599999785423279
+Epoch 43 | Loss: 0.5957936716079711 | Accuracy: 0.949999988079071
+Epoch 44 | Loss: 0.5922095501422882 | Accuracy: 0.9700000286102295
+Epoch 45 | Loss: 0.5927576768398285 | Accuracy: 0.9700000286102295
+Epoch 46 | Loss: 0.5972729396820068 | Accuracy: 0.9700000286102295
+Epoch 47 | Loss: 0.6031341099739075 | Accuracy: 0.9399999976158142
+Epoch 48 | Loss: 0.5892554330825805 | Accuracy: 0.9700000286102295
+Epoch 49 | Loss: 0.5954128587245942 | Accuracy: 0.949999988079071
+Epoch 50 | Loss: 0.5926830577850342 | Accuracy: 0.9599999785423279
+Epoch 51 | Loss: 0.5903236508369446 | Accuracy: 0.9700000286102295
+Epoch 52 | Loss: 0.5953699564933777 | Accuracy: 0.9599999785423279
+Epoch 53 | Loss: 0.5861588215827942 | Accuracy: 0.9700000286102295
+Epoch 54 | Loss: 0.5901164746284485 | Accuracy: 0.9700000286102295
+Epoch 55 | Loss: 0.5878022563457489 | Accuracy: 0.9700000286102295
+Epoch 56 | Loss: 0.5905397319793702 | Accuracy: 0.9700000286102295
+Epoch 57 | Loss: 0.5986221885681152 | Accuracy: 0.949999988079071
+Epoch 58 | Loss: 0.5882948863506318 | Accuracy: 0.9700000286102295
+Epoch 59 | Loss: 0.5875321531295776 | Accuracy: 0.9700000286102295
+Epoch 60 | Loss: 0.5909183883666992 | Accuracy: 0.9599999785423279
+Epoch 61 | Loss: 0.5861258363723755 | Accuracy: 0.9700000286102295
+Epoch 62 | Loss: 0.5905940985679626 | Accuracy: 0.9599999785423279
+Epoch 63 | Loss: 0.5875525081157684 | Accuracy: 0.9700000286102295
+Epoch 64 | Loss: 0.5863505876064301 | Accuracy: 0.9599999785423279
+Epoch 65 | Loss: 0.5857399773597717 | Accuracy: 0.9700000286102295
+Epoch 66 | Loss: 0.5848292064666748 | Accuracy: 0.9700000286102295
+Epoch 67 | Loss: 0.5891893649101257 | Accuracy: 0.949999988079071
+Epoch 68 | Loss: 0.5888894319534301 | Accuracy: 0.9700000286102295
+Epoch 69 | Loss: 0.5868952918052673 | Accuracy: 0.9700000286102295
+Epoch 70 | Loss: 0.5872566378116608 | Accuracy: 0.9700000286102295
+Epoch 71 | Loss: 0.5849917781352997 | Accuracy: 0.9700000286102295
+Epoch 72 | Loss: 0.5885302150249481 | Accuracy: 0.9700000286102295
+Epoch 73 | Loss: 0.5863592970371246 | Accuracy: 0.9700000286102295
+Epoch 74 | Loss: 0.586495304107666 | Accuracy: 0.9700000286102295
+Epoch 75 | Loss: 0.587763922214508 | Accuracy: 0.9599999785423279
+Epoch 76 | Loss: 0.5842146062850953 | Accuracy: 0.9700000286102295
+Epoch 77 | Loss: 0.5937709498405457 | Accuracy: 0.9599999785423279
+Epoch 78 | Loss: 0.5846396374702454 | Accuracy: 0.9599999785423279
+Epoch 79 | Loss: 0.5831698632240295 | Accuracy: 0.9700000286102295
+Epoch 80 | Loss: 0.5928225708007813 | Accuracy: 0.9599999785423279
+Epoch 81 | Loss: 0.5855970537662506 | Accuracy: 0.9700000286102295
+Epoch 82 | Loss: 0.5831297302246093 | Accuracy: 0.9700000286102295
+Epoch 83 | Loss: 0.581583594083786 | Accuracy: 0.9900000095367432
+Epoch 84 | Loss: 0.5830717778205872 | Accuracy: 0.9700000286102295
+Epoch 85 | Loss: 0.5836828970909118 | Accuracy: 0.9700000286102295
+Epoch 86 | Loss: 0.5864930284023285 | Accuracy: 0.9599999785423279
+Epoch 87 | Loss: 0.5837798130512237 | Accuracy: 0.9700000286102295
+Epoch 88 | Loss: 0.5868898785114288 | Accuracy: 0.9599999785423279
+Epoch 89 | Loss: 0.5852033507823944 | Accuracy: 0.9700000286102295
+Epoch 90 | Loss: 0.5856384694576263 | Accuracy: 0.9700000286102295
+Epoch 91 | Loss: 0.5814623355865478 | Accuracy: 0.9700000286102295
+Epoch 92 | Loss: 0.5838024067878723 | Accuracy: 0.9599999785423279
+Epoch 93 | Loss: 0.5828847777843476 | Accuracy: 0.9700000286102295
+Epoch 94 | Loss: 0.5851786875724793 | Accuracy: 0.9700000286102295
+Epoch 95 | Loss: 0.5838451635837555 | Accuracy: 0.9700000286102295
+Epoch 96 | Loss: 0.595951577425003 | Accuracy: 0.949999988079071
+Epoch 97 | Loss: 0.5830824697017669 | Accuracy: 0.9700000286102295
+Epoch 98 | Loss: 0.5855240976810455 | Accuracy: 0.9700000286102295
+Epoch 99 | Loss: 0.5839224231243133 | Accuracy: 0.9700000286102295
+Epoch 100 | Loss: 0.5849925291538238 | Accuracy: 0.9599999785423279
+Predicted: 0, Real: 0
+Predicted: 1, Real: 1
+Predicted: 1, Real: 1
+Predicted: 0, Real: 0
+Predicted: 2, Real: 2
+Predicted: 1, Real: 1
+Predicted: 2, Real: 2
+Predicted: 0, Real: 0
+Predicted: 0, Real: 0
+Predicted: 2, Real: 2
+Predicted: 1, Real: 1
+Predicted: 0, Real: 0
+Predicted: 2, Real: 2
+Predicted: 1, Real: 1
+Predicted: 1, Real: 1
+Predicted: 0, Real: 0
+Predicted: 1, Real: 1
+Predicted: 1, Real: 1
+Predicted: 0, Real: 0
+Predicted: 0, Real: 0
+Predicted: 1, Real: 1
+Predicted: 1, Real: 1
+Predicted: 1, Real: 1
+Predicted: 0, Real: 0
+Predicted: 2, Real: 2
+Predicted: 1, Real: 1
+Predicted: 0, Real: 0
+Predicted: 0, Real: 0
+Predicted: 1, Real: 1
+Predicted: 2, Real: 2
+Predicted: 1, Real: 1
+Predicted: 2, Real: 2
+Predicted: 1, Real: 1
+Predicted: 2, Real: 2
+Predicted: 2, Real: 2
+Predicted: 0, Real: 0
+Predicted: 1, Real: 1
+Predicted: 0, Real: 0
+Predicted: 1, Real: 1
+Predicted: 2, Real: 2
+Predicted: 2, Real: 2
+Predicted: 0, Real: 0
+Predicted: 2, Real: 2
+Predicted: 2, Real: 2
+Predicted: 1, Real: 1
+Predicted: 2, Real: 2
+Predicted: 0, Real: 0
+Predicted: 0, Real: 0
+Predicted: 0, Real: 0
+Predicted: 1, Real: 1
+Test accuracy: 100.0%

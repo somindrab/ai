@@ -1,0 +1,17 @@
+def train(model, num_epochs, train_dl, validation_dl):
+    for epoch in range(num_epochs):
+        model.train()
+        for x_batch, y_batch in train_dl:
+            pred = model(x_batch)
+            loss = loss_fn(y_batch)
+            loss.backward()
+            optimizer.step()
+            optimizer.zero_grad()
+
+        mode.eval()
+        with torch.no_grad():
+            for x_batch, y_batch in validation_dl:
+                pred = model(x_batch)
+                loss = loss_fn(pred, y_batch)
+                epoch_validation_loss[epoch] = epoch_validation_loss[epoch] + loss.item()*y_batch.size(0)
+                

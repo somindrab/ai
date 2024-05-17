@@ -1,0 +1,16 @@
+from sklearn.model_selection import train_test_split
+
+## there are a total of 70,000 examples with 70000 labels.
+## we want to use 55000 for training, 5000 for validation, and 10000 for testing
+
+X_temp, X_test, y_temp, y_test = train_test_split(X,
+                                                  y,
+                                                  test_size=10000,
+                                                  random_state=123,
+                                                  stratify=y)
+
+X_train, X_valid, y_train, y_valid = train_test_split(X_temp,
+                                                      y_temp,
+                                                      test_size=5000,
+                                                      random_state=123,
+                                                      stratify=y)

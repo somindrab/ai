@@ -1,0 +1,29 @@
+#yet another mnist classification program
+#but this one uses a Convolutional Neural Network (CNN)
+
+#Load the data
+import torchvision
+from torchvision import transforms
+
+image_path = './'
+transform = transforms.Compose([transforms.ToTensor()])
+
+mnist_dataset = torchvision.datasets.MNIST(root=image_path,
+                                           train=True,
+                                           transform=transform,
+                                           download=True)
+
+#split the training dataset into training and validation.
+#torchvision has training and test, and so we need to do this
+#split by ourselves
+
+from torch.utils.data import Subset
+mnist_validation_dataset = Subset(mnist_dataset,
+                                  torch.arange(10000))
+
+mnist_train_dataset = Subset(mnist_dataset,
+                             torch.arange(10000,len(mnist_dataset)))
+
+
+
+                
