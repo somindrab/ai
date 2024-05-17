@@ -1,0 +1,6 @@
+A collection of AI/ML projects and code.
+
+Note: none of the datasets are here. Because of their size.
+
+ml/ - has basic machine learning code
+nn/ - various types of neural networks.
